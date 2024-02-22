@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 module HexletCode
+  # Модуль Tag формирует тэги
   module Tag
     def self.build(tag, options = {})
       result = []
