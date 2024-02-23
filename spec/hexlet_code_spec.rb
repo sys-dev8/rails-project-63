@@ -5,7 +5,7 @@ RSpec.describe HexletCode do
     expect(HexletCode::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "form_for" do
+    expect(HexletCode.form_for).to eq("<form></form>")
   end
 end
