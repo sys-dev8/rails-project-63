@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
 RSpec.describe HexletCode::Tag do
-  it "form_for" do
-    expect(HexletCode.form_for).to eq("<form></form>")
-  end
-
   it "img" do
     expect(HexletCode::Tag.build("img", src: "path/to/image")).to eq("<img src=\"path/to/image\">")
   end

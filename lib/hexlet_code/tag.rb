@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module HexletCode
-  # Модуль Tag формирует тэги
-  module Tag
+  # Класс Tag формирует тэги
+  class Tag
     def self.build(tag, options = {})
       result = []
       options.each { |a, b| result << " #{a}=\"#{b}\"" }
